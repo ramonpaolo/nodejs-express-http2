@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+    node:
+        build:
+            context: .
+            dockerfile: ./docker/node.dockerfile
+        image: r4deu51/node_express_http2
+        container_name: node_express_http2
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./:/app:rw

@@ -1,0 +1,7 @@
+/node_modules
+/dist
+.env
+
+# Certificate SSL
+server.crt
+server.key
